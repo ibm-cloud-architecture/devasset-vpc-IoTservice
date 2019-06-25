@@ -2,23 +2,23 @@
 
 ### Architecture
 
-This asset consists of a VPC, subnet, a virtual server with an IOT application installed and the IBM Cloud IOT service.
+This asset consists of a VPC, subnet, and a virtual server with an IOT application installed and the IBM Cloud IOT service.
 
 <kbd>![Serviced-scenario](./imgs/architecture.png)</kbd>
 
 ### Prerequisites
 
-- Account must be enabled to access VPC Infrastructure.
+- Account must be enabled to access [VPC Infrastructure](https://cloud.ibm.com/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
 
-- Prior to runing the terraform, you should set up the IoT Platform components. You will need to create the service, register the device and application, install the IOT starter applicaion on an android device that can communicate with the IoT platform service via the internet and create the Application API key and token. See the steps below.
+- Prior to runing the terraform, you should set up the IoT Platform components. You will need to create the service, register the device and application, install the IOT starter applicaion on an android device that can communicate with the IoT platform service via the internet, and create the Application API key and token. See the steps below.
 
-- Complete the [IBM Cloud Terraform tutorial](https://www.ibm.com/cloud/garage/tutorials/public-cloud-infrastructure) your desktop environment will be ready to run this example
+- Complete the [IBM Cloud Terraform tutorial](https://www.ibm.com/cloud/garage/tutorials/public-cloud-infrastructure) so your desktop environment will be ready to run this example.
 
 - Use the Dockerfile from the [IBM Cloud Terraform provider repository](https://github.com/IBM-Cloud/terraform-provider-ibm-docker).
 
 ### Steps to deploy this asset
 
-1. **Build** IBM Cloud terraform docker container using the steps in the Tutorial noted above.
+1. **Build** IBM Cloud terraform docker container using the steps in the tutorial noted above.
 
    - docker build -t="terraform-vpc-ibm-docker" . --no-cache
    - docker run -it terraform-vpc-ibm-docker /bin/bash
@@ -36,8 +36,8 @@ This asset consists of a VPC, subnet, a virtual server with an IOT application i
    - Edit the variable.tf and add your values for the variables.
    - Run Terraform (init, plan, apply).
    - Refer to the [tutorial](https://www.ibm.com/cloud/garage/architectures/public-cloud/public-cloud-infrastructure) for instructions.
-   - Set up the IoT service and mobile application using steps in  the [IoT guide](./IoT/IoTguide.md)
+   - Set up the IoT service and mobile application using steps in  the [IoT guide](./IoT/IoTguide.md).
 
-3. **Test** by installing and using  the mobile application on your device as noted in the [IoT guide](./IoT/IoTguide.md)
+3. **Test** by installing and using the mobile application on your device as noted in the [IoT guide](./IoT/IoTguide.md)
 
 4. **Enjoy!**
