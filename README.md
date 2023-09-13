@@ -12,7 +12,7 @@ This asset consists of a VPC, subnet, a virtual server with an IOT application i
 
 - Prior to runing the terraform, you should set up the IoT Platform components. You will need to create the service, register the device and application, install the IOT starter applicaion on an android device that can communicate with the IoT platform service via the internet and create the Application API key and token. See the steps below.
 
-- Complete the [IBM Cloud Terraform tutorial](https://www.ibm.com/cloud/garage/tutorials/public-cloud-infrastructure) your desktop environment will be ready to run this example
+- Complete the [IBM Cloud Terraform tutorial](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started) your desktop environment will be ready to run this example
 
 - Use the Dockerfile from the [IBM Cloud Terraform provider repository](https://github.com/IBM-Cloud/terraform-provider-ibm-docker).
 
